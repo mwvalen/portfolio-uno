@@ -2,6 +2,7 @@
   "name": "portfolio-uno",
   "version": "0.1.0",
   "private": true,
+  "author": "ValenThe(1||Singularity)",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
@@ -12,6 +13,7 @@
   "dependencies": {
     "vue": "^2.5.21",
     "vue-router": "^3.0.1",
+    "vuetify": "^1.4.1",
     "vuex": "^3.0.1"
   },
   "devDependencies": {
@@ -29,6 +31,10 @@
     "eslint-plugin-vue": "^5.0.0",
     "node-sass": "^4.9.0",
     "sass-loader": "^7.0.1",
-    "vue-template-compiler": "^2.5.21"
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.1",
+    "vue-cli-plugin-vuetify": "^0.4.6",
+    "vue-template-compiler": "^2.5.21",
+    "vuetify-loader": "^1.0.5"
   }
 }
