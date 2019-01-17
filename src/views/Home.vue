@@ -12,6 +12,9 @@
     <v-flex xs12>
       <Skills />
     </v-flex>
+    <v-flex xs12 mt-5 pt-5>
+      <ContactForm />
+    </v-flex>
     </v-layout>
   </v-container>
 </template>
@@ -19,11 +22,13 @@
 <script>
   import Bio from '../components/Bio'
   import Skills from '../components/Skills'
+  import ContactForm from '../components/ContactForm'
 
   export default {
     components: {
       Skills,
-      Bio
+      Bio,
+      ContactForm
     },
     computed: {
       bio: function() {

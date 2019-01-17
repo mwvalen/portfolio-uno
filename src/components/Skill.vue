@@ -1,6 +1,6 @@
 <template>
     <div :key="key">
-        <h2 class="subheading">{{name}}</h2>
+        <h2 class="subheading font-weight-bold">{{name}}</h2>
         <v-progress-linear
             color="primary"
             height="15"

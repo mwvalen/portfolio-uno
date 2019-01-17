@@ -5,9 +5,9 @@
         wrap    
     >
         <v-flex xs12 sm10 md8>
-            <v-card class="elevation-12">
+            <v-card class="elevation-4">
                 <v-toolbar dark color="primary">
-                    <v-toolbar-title>Skills</v-toolbar-title>
+                    <v-toolbar-title class="font-weight-thin headline">Skills</v-toolbar-title>
                 </v-toolbar>
                 <v-card-text>
                     <Skill v-for="(skill, i) in skills"

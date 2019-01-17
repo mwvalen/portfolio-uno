@@ -44,7 +44,7 @@ export default new Vuex.Store({
         rating: 3
       }
     ],
-    bio: "Dakshya is both sweet and spicy. Naughty and nice. She's a ray of sunshine and budding entrepreneur / UX designer / yogi"
+    bio: 'Dakshya is a ray of sunshine and budding entrepreneur / UX designer / yogi'
   },
   mutations: {
 
