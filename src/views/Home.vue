@@ -2,7 +2,9 @@
   <v-container fluid fill-height row wrap>
     <v-layout justify-center row wrap>
       <v-flex xs12 text-xs-center mt-5>
-        <p class="headline font-weight-thin">{{ bio }}</p>
+        <Bio>
+          {{ bio }}
+        </Bio>
       </v-flex>
       <v-flex xs12 text-xs-center row pb-3>
         <v-icon x-large>fas fa-grin-beam</v-icon>
@@ -15,11 +17,13 @@
 </template>
 
 <script>
+  import Bio from '../components/Bio'
   import Skills from '../components/Skills'
 
   export default {
     components: {
-      Skills
+      Skills,
+      Bio
     },
     computed: {
       bio: function() {
