@@ -12,6 +12,7 @@
     "pushToSurge": "npm run build && cd dist && surge --domain dakshya-in-dark.surge.sh"
   },
   "dependencies": {
+    "firebase": "^5.7.3",
     "vue": "^2.5.21",
     "vue-router": "^3.0.1",
     "vuetify": "^1.4.1",

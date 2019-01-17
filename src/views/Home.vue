@@ -6,7 +6,7 @@
           {{ bio }}
         </Bio>
       </v-flex>
-      <v-flex xs12 text-xs-center row pb-3>
+      <v-flex xs12 text-xs-center row my-4>
         <v-icon x-large>fas fa-grin-beam</v-icon>
       </v-flex>
     <v-flex xs12>
