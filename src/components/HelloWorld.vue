@@ -1,10 +1,11 @@
 <template>
-  <v-container fluid>
-    <v-layout
+  <v-layout
       text-xs-center
       wrap
     >
-      <v-flex xs12>
+      <v-flex 
+        xs12
+      >
         <v-img
           :src="require('../assets/logo.svg')"
           class="my-3"
@@ -13,7 +14,7 @@
         ></v-img>
       </v-flex>
 
-      <v-flex mb-4>
+      <v-flex mb-4 xs12>
         <h1 class="display-2 font-weight-bold mb-3">
           Welcome to Vuetify
         </h1>
@@ -44,6 +45,7 @@
       </v-flex>
 
       <v-flex
+        
         xs12
         mb-5
       >
@@ -80,8 +82,7 @@
           </a>
         </v-layout>
       </v-flex>
-    </v-layout>
-  </v-container>
+  </v-layout>
 </template>
 
 <script>

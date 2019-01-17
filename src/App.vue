@@ -2,16 +2,16 @@
   <v-app dark>
     <v-toolbar app>
       <v-toolbar-title class="headline text-uppercase">
-        <span>Vuetify</span>
-        <span class="font-weight-light">MATERIAL DESIGN</span>
+        <span>{{name.first}}</span>
+        <span class="font-weight-light">{{name.last}}</span>
       </v-toolbar-title>
       <v-spacer></v-spacer>
       <v-btn
         flat
-        href="https://github.com/vuetifyjs/vuetify/releases/latest"
+        :href="linkedin"
         target="_blank"
       >
-        <span class="mr-2">Latest Release</span>
+        <span class="mr-2">LinkedIn</span>
         <v-icon>fas fa-external-link-alt</v-icon>
       </v-btn>
     </v-toolbar>
@@ -29,6 +29,17 @@ export default {
   data () {
     return {
       //
+    }
+  },
+  computed: {
+    name: function() {
+      return {
+        first: this.$store.state.name.first,
+        last: this.$store.state.name.last
+      }
+    },
+    linkedin: function() {
+      return this.$store.state.linkedin
     }
   }
 }
