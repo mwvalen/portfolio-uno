@@ -2,13 +2,13 @@
 
 ## Tech used
 
-VueUI to generate the boilerplate
-Vue2
-Vuetify
-Vuex
-Firebase Functions
-Nodemailer
-Mailgun
+VueUI to generate the boilerplate<br>
+Vue2<br>
+Vuetify<br>
+Vuex<br>
+Firebase Functions<br>
+Nodemailer<br>
+Mailgun<br>
 
 ## Project setup
 ```
