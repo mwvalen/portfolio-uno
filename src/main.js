@@ -8,17 +8,6 @@ import router from './router'
 import store from './store'
 import { colors } from 'vuetify/lib'
 
-var config = {
-  apiKey: 'AIzaSyAhYaxPJjPR5G0vRPuzcn2NDiH1NpeZ9xc',
-  authDomain: 'portfolio-uno.firebaseapp.com',
-  databaseURL: 'https://portfolio-uno.firebaseio.com',
-  projectId: 'portfolio-uno',
-  storageBucket: 'portfolio-uno.appspot.com',
-  messagingSenderId: '532385635472'
-}
-
-firebase.initializeApp(config)
-
 Vue.config.productionTip = false
 
 Vue.use(Vuetify, {

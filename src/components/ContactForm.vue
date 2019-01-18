@@ -33,7 +33,7 @@
                     class="full-width"
                     block
                     @click="validate"
-                    :disabled="hasSent"
+                    :disabled="buttonStatus"
                 >
                     {{buttonText}}
                 </v-btn>
@@ -43,6 +43,8 @@
 </template>
 
 <script>
+    import axios from 'axios'
+
 export default {
     data: () => ({
         valid: true,
@@ -55,18 +57,30 @@ export default {
         messageRules: [
             v => !!v || 'Message is required'
         ],
-        hasSent: false
+        hasSent: false,
+        sendFailed: false
     }),
     methods: {
         validate () {
             if (this.$refs.form.validate()) {
-                this.hasSent = true
+                
+                axios.get(`https://us-central1-portfolio-uno.cloudfunctions.net/sendContactFormEmail?message=${this.message}&email=${this.email}`).then(() => {
+                    console.log("WHOOO")
+                    this.hasSent = true
+                    this.sendFailed = false
+                }).catch(() => {
+                    this.sendFailed = true
+                    console.log("NOPE")
+                })
             }
         }
     },
     computed: {
         buttonText() {
-            return (this.hasSent ? 'Message sent! Thank you' : 'Send')
+            return (this.hasSent ? 'Message sent! Thank you' : (this.sendFailed ? 'Something went wrong. Please try again later' : 'Send'))
+        },
+        buttonStatus() {
+            return (this.hasSent || this.sendFailed)
         }
     }
 }
