@@ -1,5 +1,5 @@
 <template>
-    <div :key="key">
+    <div>
         <h2 class="subheading font-weight-bold">{{name}}</h2>
         <v-progress-linear
             color="primary"
@@ -17,7 +17,6 @@
         }),
         props: {
             name: String,
-            key: Number,
             rating: {
                 type: Number,
                 default: 0
