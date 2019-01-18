@@ -1,5 +1,15 @@
 # portfolio-uno
 
+## Tech used
+
+VueUI to generate the boilerplate
+Vue2
+Vuetify
+Vuex
+Firebase Functions
+Nodemailer
+Mailgun
+
 ## Project setup
 ```
 npm install
